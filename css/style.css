@@ -1,0 +1,193 @@
+/* fontawesome icons  */
+/* <i class="fas fa-long-arrow-alt-right"></i> */
+/* <i class="fab fa-instagram"></i> */
+/* <i class="fab fa-youtube"></i> */
+/* <i class="fab fa-dribbble"></i> */
+/* <i class="fab fa-twitter"></i> */
+
+/* *************************
+common part start 
+************************* */
+
+:root {
+	--primary-btn: #e02c6d;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+}
+
+a {
+	text-decoration: none;
+	display: inline-block;
+	cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 700;
+	color: rgba(0, 0, 0, 0.8);
+}
+
+.btn {
+	background-color: var(--primary-btn);
+	color: white;
+	font-size: 15px;
+	padding: 10px 24px;
+	transition: background 0.3s;
+}
+
+.btn:hover {
+	background: #96274fd2;
+}
+
+.btn span {
+	margin-right: 8px;
+}
+
+img {
+	max-width: 100%;
+	object-fit: cover;
+}
+
+/* *************************
+common part end 
+************************* */
+
+/* *************************
+header part start 
+************************* */
+
+#header {
+	background: #2d25a0;
+	padding: 0px 155px;
+}
+
+/* nav start  */
+#nav {
+	background: transparent;
+	padding-top: 40px;
+}
+
+.nav-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.nav-container > div {
+	align-self: center;
+}
+
+.menu-bar {
+	display: none;
+}
+
+.nav-list {
+	list-style-type: none;
+	margin: 0;
+	display: flex;
+}
+
+.nav-list a {
+	margin-right: 24px;
+	color: white;
+	font-size: 15px;
+	transition: color 0.3s;
+}
+
+.nav-list a:hover {
+	color: #e02c6d;
+}
+/* nav end  */
+
+.header-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 50px 0 84px;
+}
+
+.header-container > div {
+	align-items: center;
+	width: 50%;
+}
+
+.header-text h1 {
+	color: white;
+	font-size: 62px;
+	margin-bottom: 30px;
+}
+
+.header-text span {
+	margin-left: 8px;
+}
+
+.header-img {
+	transition: all 0.3s;
+}
+
+.header-img:hover {
+	transform: scale(1.1);
+}
+
+/* *************************
+header part end 
+************************* */
+
+/* *************************
+main part start 
+************************* */
+#main {
+	background: #dedede;
+}
+
+.main-container {
+	max-width: 1050px;
+	margin: auto;
+}
+
+.player-lists {
+	padding: 90px 0;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 30px;
+}
+
+.player-box {
+	background: white;
+	padding: 13px;
+	border: 2px solid #fff;
+	transition: 0.2s;
+	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+.player-box:hover {
+	border: 2px solid var(--primary-btn);
+}
+
+.player-about {
+	padding: 15px 0;
+}
+
+.player-name {
+	font-size: 25px;
+	margin-bottom: 10px;
+}
+
+.player-details {
+	color: #6c6c6c;
+	font-size: 14px;
+}
+/* *************************
+main part end 
+************************* */
