@@ -83,6 +83,13 @@ header part start
 
 .menu-bar {
 	display: none;
+	font-size: 24px;
+	color: white;
+	cursor: pointer;
+	transition: color 0.2s;
+}
+.menu-bar:hover {
+	color: var(--primary-btn);
 }
 
 .nav-list {
@@ -95,7 +102,7 @@ header part start
 	margin-right: 24px;
 	color: white;
 	font-size: 15px;
-	transition: color 0.3s;
+	transition: all 0.3s;
 }
 
 .nav-list a:hover {
@@ -320,10 +327,6 @@ main part start
 /* iconic moment end  */
 
 /* highlighted moment start  */
-#h-lights {
-	/* margin-bottom: 50px; */
-}
-
 .h-lights-container {
 	display: flex;
 	justify-content: center;
@@ -413,4 +416,139 @@ footer part start
 }
 /* *************************
 footer part end 
+************************* */
+
+/* *************************
+responsive part start 
+************************* */
+
+/* tablet  */
+@media screen and (max-width: 768px) {
+	#header {
+		padding: 0 50px;
+	}
+	.nav-list a {
+		margin-right: 15px;
+	}
+	.header-container {
+		flex-direction: column;
+	}
+	.header-container > div {
+		width: 100%;
+	}
+	.header-text h1 {
+		font-size: 42px;
+		margin-bottom: 20px;
+	}
+	.header-img {
+		margin-top: 50px;
+	}
+	.main-container {
+		max-width: 720px;
+	}
+	.player-lists {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.upcoming-matches {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.match:not(:last-child)::after {
+		display: none;
+	}
+	.img-gallery {
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 10px;
+	}
+	.messi {
+		grid-row: 2 / 3;
+		grid-column: 2 / span 2;
+	}
+	.dribbling {
+		grid-row: 2 / span 2;
+		height: 100% !important;
+	}
+	.goal {
+		grid-column: 2 / span 2;
+	}
+	.h-lights-container {
+		flex-direction: column;
+	}
+	.h-lights-container > div {
+		width: 100%;
+	}
+	.h-lights-text {
+		padding-left: 30px;
+	}
+}
+/* tablet  */
+
+/* mobile  */
+@media screen and (max-width: 576px) {
+	.menu-bar {
+		display: inline-block;
+		position: relative;
+	}
+	.nav-list {
+		position: absolute;
+		width: 200px;
+		flex-direction: column;
+		background: #fff;
+		top: 13%;
+		height: 0;
+		transition: 0.3s;
+		overflow: hidden;
+	}
+	.nav-list a {
+		display: block;
+		margin-right: 0;
+		padding: 20px 20px;
+		color: black;
+	}
+	.nav-list a:hover {
+		background: var(--primary-btn);
+		color: white;
+	}
+	.menu-bar:hover + .nav-list {
+		height: calc(63px * 5);
+	}
+	#header {
+		padding: 0 25px;
+	}
+	.header-text h1 {
+		font-size: 35px;
+		margin-bottom: 20px;
+	}
+	.main-container {
+		max-width: 85%;
+	}
+	.player-lists {
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.upcoming-matches {
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.img-gallery {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+	.h-lights-text {
+		padding: 10px;
+	}
+	.h-lights-text h1 {
+		font-size: 34px;
+	}
+	.h-lights-text p {
+		font-size: 14px;
+	}
+	.h-lights-img {
+		padding: 10px;
+	}
+	.footer-img {
+		width: 85%;
+	}
+}
+/* mobile  */
+/* *************************
+responsive part end 
 ************************* */
